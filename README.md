@@ -3,7 +3,7 @@
 @author : Robert Bradford
 @email : rbrad@med.unc.edu
 @institution: University of North Carolina at Chapel Hill
-@department: NC TraCS I nstitute - Informatics and Data Science
+@department: NC TraCS Institute - Informatics and Data Science
 ```
 
 A set of extensions to base i2b2 to improve user experience
