@@ -1,0 +1,702 @@
+body {
+	padding: 0px !important;
+	height: 100% !important;
+	background-image: linear-gradient(#89c4f4, #dbedfb) !important;
+	line-height: 16px;
+	margin: 0px;
+}
+
+#screenQueryData {
+	padding-top: 15px !important;
+	padding-left: 15px !important;
+}
+
+.navBarFrame {
+	position:relative !important; 
+	top:0 !important;
+	height: 40px !important;
+	width: 100%;
+	font-family:verdana,arial,helvetica;
+	
+}
+.navBarFrame div {
+	background: #E9E9E9 !important;
+	
+	background-image: -moz-linear-gradient(#F9F9F9, #DADADA) !important;
+				
+	/* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background-image:
+	  -webkit-gradient(linear, from(#F9F9F9), to(#DADADA)) !important;
+	
+	/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image:
+	  -webkit-linear-gradient(#F9F9F9, #DADADA) !important;
+	
+	/* Firefox 3.6 - 15 */
+	background-image:
+	  -moz-linear-gradient(#F9F9F9, #DADADA) !important;
+	
+	/* Opera 11.1 - 12 */
+	background-image:
+	  -o-linear-gradient(#F9F9F9, #DADADA) !important;
+	
+	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+		background-image:
+		  linear-gradient(#F9F9F9, #DADADA) !important;
+}
+
+.navBarFrame #navBarBody {
+	height: 35px;
+	line-height: 35px;
+}
+.navBarFrame a , .navBarFrame a:hover {
+	color: #337ab7 !important;
+	font-size: 10pt !important;
+	text-decoration: none !important;
+}
+
+.navBarFrame #navBarBody #UNCLogo {
+	position:absolute; 
+	left: 10px; 
+	height: 35px; 
+}
+
+.navBarFrame #navBarBody .navBarGroup {
+	position: absolute;
+	height: 35px;
+	margin: 0px;
+	right: 10px;
+}
+
+.navBarFrame #navBarFoot {
+	height: 3px;
+	line-height: 3px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+.navBarFrame ul {
+	padding: 0;
+	margin: 0;
+	background: none;
+	float: left;
+	z-index: 1001;
+}
+
+.navBarFrame  .navItem {
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 25px;
+}
+
+.navBarFrame  .navItem img{
+	top: 3px;
+	position: relative;
+	padding-right: 5px;
+}
+.navBarFrame .navBarGroup li {
+	list-style: none !important;
+}
+
+.navBarFrame .navBarGroup li.navItem {
+	float: left;
+	display: inline;
+	position: relative;
+	width: auto;
+	font-size: 11pt;
+	z-index: 1001;
+}
+
+.navBarFrame .navBarGroup li.navItem {
+	height: 35px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.navBarFrame .navBarGroup li.navItem:hover {
+	background-color: #e1e1e1;
+	cursor: pointer;
+	height: 35px;
+	margin-left:0px;
+	margin-right:0px;
+	border-left: 1px solid #7a7a7a;
+	border-right: 1px solid #7a7a7a;
+}
+
+.navBarFrame .navBarGroup .navItem li.navSubItem:hover {
+	background-color: #e1e1e1;
+	cursor: pointer;
+}
+		
+.navBarFrame .navBarGroup li:hover > ul {
+	display: block;
+}
+
+.navBarFrame .navBarGroup ul ul {
+	position: absolute;
+	left: -1px;
+	top: 35px;
+	display: none;
+	width: 100%;
+	min-width:140px;
+	z-index: 1001;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	background-color: #f5f5f5;
+	border: 1px solid #7a7a7a;
+}
+
+.navBarFrame .navBarGroup ul ul.navLast {
+	/*left: -20px;*/
+}
+
+.navBarFrame .navBarGroup ul ul li{
+	/*padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10xp;
+	padding-bottom: 5px;*/
+	width: 100%;
+	min-width: 140px;
+	text-align: left;
+	z-index: 1001;
+	
+}
+
+.navBarFrame .navBarGroup ul ul li.lastLi:hover {
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+}
+
+.navBarFrame .navBarGroup .listLink {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	min-width: 140px;
+	line-height: 12pt;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #e5e5e5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.navBarFrame .navBarGroup .lastLi .listLink{
+	border: 0px;
+}
+
+.divider , .divider:hover{
+	height: 1px;
+	overflow: hidden;
+	background-color: grey;
+}
+
+.UNC-Custom-Panel {
+	border: 1px solid black !important;
+	border-radius: .5em !important;
+}
+
+.UNC-Custom-Panel .container-close {
+	background-image: url("images/cancel.png");
+	top: 7px;
+	right: 7px;
+	height: 16px;
+	width: 16px;
+}
+
+/*This is the underlay/shadow for the Panel containers */
+.underlay {
+	border-radius: .5em !important;
+}
+
+.UNCErrorMsg {
+	color: black;
+	font-size: 12px;
+}
+
+.UNCErrorCode {
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 10px;
+}
+.UNC-Custom-Panel-Head .UNCIcon {
+	padding: 7px;
+	float: left;
+}
+
+.hd.UNC-Custom-Panel-Head ,
+.yui-panel .hd.UNC-Custom-Panel-Head, 
+.yui-skin-sam .yui-panel .hd.UNC-Custom-Panel-Head {
+	height: 30px;
+	line-height:30px;
+	font-size: 14px !important;
+	color: #365f91 !important;
+	    
+	background: #E9E9E9 !important;
+	
+	background-image: -moz-linear-gradient(#EEEEEE, #d8d8d8) !important;
+	
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #d8d8d8 95%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#d8d8d8 95%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#d8d8d8 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+    border-bottom: 1px solid #bababa !important;
+    box-shadow: 0 -1px 0 #fff inset, 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+
+
+}
+/* Custom Panel Styles */
+.bd.UNC-Custom-Panel-Body {
+	background-color: white !important;
+	font-size: 12px !important;
+	
+}
+.ft.UNC-Custom-Panel-Foot {
+	
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #d8d8d8 95%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#d8d8d8 95%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#d8d8d8 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	 
+	border-top: 1px solid #bababa !important;
+	border-bottom: none !important;
+	border-left: none !important;
+	border-right: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100%;
+    height: 40px !important;
+}
+
+.ft.UNC-Custom-Panel-Foot .button-group{
+	background-color: transparent !important;
+	padding-top: 5px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.ft.UNC-Custom-Panel-Foot .button-group.center{
+	text-align: center !important;	
+	padding-right: 0px !important;
+}
+
+.ft.UNC-Custom-Panel-Foot .yui-button ,
+.ft.UNC-Custom-Panel-Foot .yui-button .first-child
+{
+	background: transparent !important;
+	border: none !important;
+	margin: 0px !important;
+}
+
+.ft.UNC-Custom-Panel-Foot .button {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+/*
+.ft.UNC-Custom-Panel-Foot .yui-button.yui-push-button-hover {
+	background-color: #709DC4 !important;
+	transition: background-color 1s ease;
+}
+*/
+
+.ft.UNC-Custom-Panel-Foot button{
+	background-color: #fff !important;
+	/*-webkit-transition-duration: 0.3s;*/ /* Safari */
+    /*transition-duration: 0.3s;*/ /*Note: This affects the hide() as well so the buttons lag in comparison to rest of the frame */
+	font-family: verdana;	
+
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	
+	color: #333;
+	font-size: 12px !important;
+}
+
+.ft.UNC-Custom-Panel-Foot button:hover{
+	background-color: #b8dbf8 !important;
+}
+
+.ft.UNC-Custom-Panel-Foot .outsideLink {
+	background-color: #fff !important;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+    padding: 7px;
+	font-family: verdana;
+	right: 0px;
+	width: 250px;
+	
+	/*-webkit-transition-duration: 0.3s;*/ /* Safari */
+    /*transition-duration: 0.3s;*/ /*Note: This affects the hide() as well so the buttons lag in comparison to rest of the frame */
+}
+
+.ft.UNC-Custom-Panel-Foot .outsideLink:hover {
+	background-color: #b8dbf8 !important;
+	cursor: pointer;
+}
+
+
+.ft.UNC-Custom-Panel-Foot .outsideLink a:visited{
+	color: #333;
+	font-size: 12px;
+}
+
+/* Login Page Display Styles */
+.UNC-Custom-Panel .login-dialog ,  .UNC-Custom-Panel .login-announce{
+	background-color: #f8f8f8;
+	border-bottom: 1px solid white !important;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.UNC-Custom-Panel .login-dialog {
+	width: 155px !important;
+	padding-left: 15px !important;
+	height: 190px !important; /* This is different from .login-announce due to padding */
+}
+
+/*Query Interface Re-Formatting - Content boxes */
+DIV.UNC-Custom-TabBox , DIV.TopTabs.UNC-Custom-TabBox {
+	height:25px !important;
+	border: 1px solid black;
+    border-top-right-radius: 1em;
+	padding-left: 2px; /* Small Spacing on left for style */
+	/* Grey Gradient */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #d8d8d8 95%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#d8d8d8 95%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eeeeee 0%,#d8d8d8 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs {
+	color: black;
+	padding:0px;
+	height:25px;
+	background:transparent;
+	bordeR: none;
+	font-size:
+}
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs DIV {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:0px;
+	padding-bottom:0px;
+	color: black;
+	font-size: 12px;
+	line-height:25px;
+	border: none !important;
+	background: transparent !important;
+}
+
+
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.opXML {
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+    border-bottom-left-radius: .8em;
+    padding-left: 20px;
+    padding-right: 15px;
+    /* Blue Gradient */
+	background: #dbedfb; /* Old browsers */
+	background: -moz-linear-gradient(top, #dbedfb 0%, #8bafd1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #dbedfb 0%,#8bafd1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #dbedfb 0%,#8bafd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.opXML DIV { /* This is needed because the Refresh icons are added via JS and not stack in default.htm */
+	padding:0px;
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.opXML IMG {
+	padding-left:5px;
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.tabBox {
+	margin-right: 0px;
+	padding:0px;
+	border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.tabBox:hover {
+	background: #cfcfcf;
+	padding:0px;
+	margin:0px;
+	border-left: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5;
+}
+
+DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.tabBox.active , DIV.UNC-Custom-TabBox .UNC-Custom-Tabs.tabBox.active:hover{
+	border-left: 1px solid #949494;
+    border-right: 1px solid #949494;
+    border-top:none !important;
+    border-bottom:none !important;
+    margin: 0px;
+    padding:0px;
+	/* Blue Gradient */
+	background: #dbedfb; /* Old browsers */
+	background: -moz-linear-gradient(top, #dbedfb 0%, #8bafd1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #dbedfb 0%,#8bafd1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #dbedfb 0%,#8bafd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/*UNC CUSTOM MOD UNC103 */
+.UNC-Custom-Panel .login-announce {
+	width: 300px !important;
+	border-left: 1px solid black;
+	background:#FFF;
+	float: right;
+	height: 180px;	
+	font-size: 11px;
+	padding-top: 20px !important;
+}
+/*END UNC CUSTOM MOD UNC103 */
+
+.UNC-Custom-Panel .login-announce .login-announce-welcome {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+DIV#i2b2_login_modal_dialog DIV.ft.UNC-Custom-Panel-Foot {
+	height: 5px !important;
+}
+
+/*UNC CUSTOM MOD UNC126 */
+/* Login Maintenance Message Div */
+DIV#i2b2_login_modal_dialog .login-maint {
+	float: right;
+	/*height: 70px;*/
+	text-align: center;
+	width: 100%;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	border-top: 1px solid #bababa;
+	/*padding-top: 10px;
+	padding-bottom: 7px;*/
+	
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #dedede 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f4f4f4 0%,#dedede 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f4f4f4 0%,#dedede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dedede',GradientType=0 );
+	
+}
+
+/*END UNC CUSTOM MOD UNC126 */
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Alert-Head {
+	border-bottom: 1px solid grey;
+    border-right: 1px solid black;
+    border-top: 1px solid grey;
+	width: 501px; 
+	float: left; 
+	height: 25px; 
+
+	line-height: 25px;
+
+	
+	background: #ffd7a3; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffd7a3 0%, #fcbd6a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffd7a3 0%,#fcbd6a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffd7a3 0%,#fcbd6a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd7a3', endColorstr='#fcbd6a',GradientType=0 );
+}
+
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Head {
+	border-bottom: 1px solid grey;
+    border-right: 1px solid black;
+    border-top: 1px solid grey;
+	width: 501px; 
+	float: left; 
+	height: 25px; 
+
+	line-height: 25px;
+
+	
+	background: #d4e4ef; /* Old browsers */
+	background: -moz-linear-gradient(top, #d4e4ef 0%, #86aecc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d4e4ef 0%,#86aecc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d4e4ef 0%,#86aecc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 ); /* IE6-9 */
+}
+
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Head-Holiday {
+	border-bottom: 1px solid grey;
+    border-right: 1px solid black;
+    border-top: 1px solid grey;
+	width: 501px; 
+	float: left; 
+	height: 25px; 
+
+	line-height: 25px;
+
+	
+	background: #d3eddb; /* Old browsers */
+	background: -moz-linear-gradient(top, #d3eddb 0%, #88cea0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d3eddb 0%,#88cea0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d3eddb 0%,#88cea0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3eddb', endColorstr='#88cea0',GradientType=0 );
+}
+    
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Alert-Icon.UNCIcon {
+	float: left; 
+	width: 15px; 
+	padding-top: 4px;
+}
+
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Alert-Head .Sys-Alert-Head-Text , 
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Head .Sys-Alert-Head-Text {
+	/*width: 90px;*/ 
+	float: left; 
+	height: 25px;
+	line-height: 25px;
+    padding-left: 15px;
+    text-align: center;
+}
+    
+    
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Alert-Head .Sys-Alert-Head-Text span , 
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Head .Sys-Notice-Head-Text span ,
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Head-Holiday .Sys-Notice-Head-Text span  {
+	display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 25px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Alert-Body {
+    line-height: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px 15px 15px;
+    width: 469px;
+}
+
+DIV#i2b2_login_modal_dialog .login-maint .Sys-Notice-Body {
+    line-height: 13px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px 15px 15px;
+    width: 469px;
+	text-align: left;
+}
+
+.Sys-Alert-Body .alertDate {
+	font-weight: bold;
+}
+
+/* Info Button Styles */
+.UNCInfo {
+	padding-left:10px;
+}
+
+.vertical_splitter.UNC-Custom-Splitter {
+	border-top: 1px solid #d6d6d6;
+	border-right: 1px solid #909090;
+	border-left: 1px solid #909090;
+	width: 4px;
+	
+	background: #f9f9f9; /* Old browsers */
+	background: -moz-linear-gradient(left, #f9f9f9 0%, #dadada 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f9f9f9 0%,#dadada 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f9f9f9 0%,#dadada 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.UNC-Frame-Tabs {
+	
+}
+
+.changelog {
+	margin-left: 13%;
+}
+.changelog .release {
+	width: 74%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 50px;
+	font-family: calibri, verdana, arial;
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #dedede 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f4f4f4 0%,#dedede 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f4f4f4 0%,#dedede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#dedede',GradientType=0 );
+
+	border: 1px solid #909090;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
+}
+.changelog .release h3 {
+	font-size: 24px;
+}
+.changelog .release .revision {
+	margin-top: 3px;
+	padding-top: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid black;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
+	background-color: #f4f4f4;
+}
+
+.changelog .release .revision .rev_head {
+	padding: none;
+	font-size: 20px;
+	font-weight:bold;
+	padding-bottom: 5px;
+}
+
+.changelog .release .revision .rev_date {
+	font-size: 18px;
+	font-style: italic;
+}
+.changelog .release .revision .rev_list li {
+	font-size: 18px;
+	line-height: 22px;
+}
+.changelog .new {
+	color: #41c12d; /* Green */
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+.changelog .update {
+	color: #1e33d0; /* Blue */
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+.changelog .fix {
+	color: #f08e13;	/* Orange */
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+.changelog .dev_note {
+	font-style: italic;
+	font-size: 15px;
+	padding: 15px;
+	margin-right: 50px;
+	background-color: #dde5eb;
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #909090;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
+}
+
