@@ -5,6 +5,7 @@
 @institution: University of North Carolina at Chapel Hill
 @department: NC TraCS Institute - Informatics and Data Science
 ```
+#### Please note we are still working on documentation for the setup of each of the components. If you have specific questions about a component that we have not been able to upload documentation for, please contact us
 
 A set of extensions to base i2b2 to improve user experience
 
